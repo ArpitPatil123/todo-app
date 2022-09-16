@@ -23,7 +23,6 @@ function TodoList() {
   }, [todoItem]);
 
   useEffect(() => {
-    console.log(localStorage.length);
     localStorage.setItem("todos", JSON.stringify(todos));
   }, [todos]);
 
